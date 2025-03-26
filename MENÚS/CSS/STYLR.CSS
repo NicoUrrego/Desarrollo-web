@@ -1,0 +1,58 @@
+.menuCSS3 ul {
+    display: flex; /*Ajuta y acomoda cada uno de los elementos principales y desplegables*/
+    padding: 0em;/*Ajusta el espaciado existente entre cada elemento*/
+    margin: 0em;/*Ajusta el espaciado y tamaño de la margen entre cada elemento*/
+    list-style: none; /*elimina todos los puntos, viñetas o demas elementos que compongan las listas*/
+}
+
+.menuCSS3 a {
+    display: block;/*ajusta la forma y posición del elemento*/
+    padding: 1em 4em; /* Ajuste del padding (espaciado entre los elementos)*/
+    background-color: #1bbe8e;/*Ajusta el color de fondo del elemento*/
+    text-decoration: none;/*Elimina el subrayado del texto*/
+    color: #191C26; /*Ajusta el color del texto*/
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.menuCSS3 a:hover {
+    background-color: #0adab7; /*Permite cambiar el color (en este caso), cada vez que pasamos el cursor sobre el elemento*/
+}
+
+.menuCSS3 ul li {
+    position: relative; /* Necesario para el submenú */
+    width: 100%;
+}
+
+.menuCSS3 ul li ul {
+    display: none;/*Ajusta la posición del elemento interno*/
+    position: absolute; /* Posiciona el submenú */
+    top: 100%; /* Muestra el submenú debajo del elemento padre */
+    left: 0;/*Acomoda los elementos hacia la izquierda*/
+    width: 100%; /* Hace que el submenú tenga el mismo ancho que el elemento principal */
+    padding: 0em; /* Elimina padding del submenú */
+    margin: 0em;/*agusta el margen del elemento*/
+    list-style: none;
+    background-color: #b4062c; /* Color de fondo del submenú */
+}
+
+.menuCSS3 ul li:hover ul {
+    display: block; /* Muestra el submenú al pasar el mouse */
+}
+
+.menuCSS3 ul li ul li a {
+    padding: 2em;/*Ajusta el tamaño del listado desplegable*/
+}
+
+@media (max-width: 768px) {
+
+    .menuCSS3 ul li {
+
+        flex-direction: column;
+    }
+
+    .menuCSS3 a {
+
+        padding: 1em;
+        text-align: center;
+    }
+}
