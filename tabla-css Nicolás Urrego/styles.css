@@ -1,0 +1,91 @@
+/*Indica caracteristicas generales de la pagina*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Caracteristicas del body*/
+body {
+
+    background-color: lightcyan; /*color de fondo*/
+    font-family: calibri;/*Tipo de fuente */
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+/*Caracteristicas del encabezado*/
+header {
+
+background-color: rgb(135, 238, 238);
+width: 100%;
+clear: both; /*indica que este limpio de elementos en ambas direcciones*/
+content:'' ;
+display: table;
+opacity: 80%;
+}
+
+/*Caracteristicas de nuestro menu*/
+.menu {
+
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*caracteristicas del navegador*/
+nav {
+
+    float: right;
+}
+
+/*Caracteristicas de la lista de el navegador*/
+nav ul li {
+
+    list-style: none;
+    margin-left: 75px;
+    padding: 25px 0;
+    float: left;
+}
+
+nav ul li:hover {
+
+    background-color: aliceblue;
+    
+}
+
+/*Caracteristicas de los enlaces de las lista del navegador*/
+nav ul li a {
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/*Caracteristicas de las imagenes*/
+.Imagen1:hover img {
+
+transform: scale(1.3);
+}
+
+.Imagen1 img {
+
+    transition: 0.5s ease-in-out;
+}
+
+.Imagen2:hover img {
+
+    transform: scale(1.3);
+    }
+    
+    .Imagen2 img {
+    
+        transition: 0.5s ease-in-out;
+    }
+
+/*Caracteristicas de la tabla*/
+table {
+
+    border-radius: 15px; 
+    border-color: aqua;
+}
